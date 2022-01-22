@@ -17,8 +17,13 @@
     "electron-updater": "^4.3.9"
   },
   "build": {
-    "appId": "com.github.iffy.electronupdaterexample",
+    "appId": "com.github.rzarroca.electronupdaterexample",
     "afterSign": "./build/notarize.js",
+    "publish": [{
+      "provider": "github",
+      "owner": "rzarroca",
+      "repo": "electron_updater_public"
+    }],
     "mac": {
       "category": "your.app.category.type"
     },
